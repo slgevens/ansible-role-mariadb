@@ -11,6 +11,7 @@ mariadb_use_official_repo_version: 10.6
 mariadb_use_official_repo_format_deb822: false
 
 mariadb_packages:
+  - python3-pymysql
   - mariadb-client
   - mariadb-client-core
   - mariadb-common
