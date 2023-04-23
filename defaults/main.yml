@@ -10,6 +10,13 @@ mariadb_use_official_repo_version: 10.6
 # see: https://manpages.debian.org/stable/apt/sources.list.5.en.html#DEB822-STYLE_FORMAT
 mariadb_use_official_repo_format_deb822: false
 
+mariadb_packages:
+  - mariadb-client=1:10.10.2+maria~deb10
+  - mariadb-client-core=1:10.10.2+maria~deb10
+  - mariadb-common=1:10.10.3+maria~deb10
+  - mariadb-server=1:10.10.2+maria~deb10
+  - mariadb-server-core=1:10.10.2+maria~deb10
+
 mariadb_enabled_on_startup: true
 # The following is set to true by default but you may consider setting it to
 # false on production servers to prevent ansible from restarting mariadb server.
