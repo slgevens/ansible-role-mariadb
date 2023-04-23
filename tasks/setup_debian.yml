@@ -84,8 +84,6 @@
 
 - name: Install packages
   ansible.builtin.apt:
-    package:
-      - "{{ mariadb_packages }}"
-      - python3-pymysql
+    package: "{{ mariadb_packages }}"
     state: present
     update_cache: true
